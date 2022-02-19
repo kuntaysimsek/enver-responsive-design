@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
@@ -15,10 +16,10 @@
     />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   </head>
-  <body onload="returnCenterPlayIcon()">
+  <body>
     <nav>
       <div class="nav-logo">
-        <img src="./src/logo.png" alt="" />
+        <img src="./images/logo.png" alt="" />
       </div>
       <ul class="nav-list">
         <li><a href="#" class="active-router">Home</a></li>
@@ -56,19 +57,19 @@
         <button class="main-card-btn">Our Services</button>
       </div>
       <div class="main-image">
-        <img class="main-person-img" src="./src/person.png" alt="" />
+        <img class="main-person-img" src="./images/person.png" alt="" />
         <img
           class="main-double-circle-img"
-          src="./src/circle-icon.png"
+          src="./images/circle-icon.png"
           alt=""
         />
-        <img class="main-double-vector-1-img" src="./src/vector-1.png" alt="" />
+        <img class="main-double-vector-1-img" src="./images/vector-1.png" alt="" />
         <img
           class="main-double-triangle-img"
-          src="./src/triangle-icon.png"
+          src="./images/triangle-icon.png"
           alt=""
         />
-        <img class="main-double-plus-img" src="./src/plus-icon.png" alt="" />
+        <img class="main-double-plus-img" src="./images/plus-icon.png" alt="" />
       </div>
     </div>
     <div class="content-1">
@@ -81,35 +82,36 @@
       </div>
       <div
         class="video-box"
+        
         onmousemove="detectCoords(event)"
         onmouseenter="playerAnimationStart()"
         onmouseleave="playerAnimationEnd()"
       >
-        <img src="./src/video-image.png" alt="" />
+        <img src="./images/video-image.png" alt="" />
         <div class="video-player-icon">
-          <img src="./src/play-icon.png" alt="" />
+          <img src="./images/play-icon.png" alt="" />
         </div>
       </div>
     </div>
     <div class="services-container">
       <div class="services-linear-gradient"></div>
       <div class="services-linear-gradient-2"></div>
-      <img class="services-triangle-img" src="./src/triangle-icon.png" alt="" />
-      <img class="services-plus-img" src="./src/plus-icon.png" alt="" />
+      <img class="services-triangle-img" src="./images/triangle-icon.png" alt="" />
+      <img class="services-plus-img" src="./images/plus-icon.png" alt="" />
       <div class="service-title">
         The Service We Provide <br />
         For You
       </div>
       <div class="services-box">
         <div class="service-card">
-          <img class="service-logo" src="./src/development-icon.png" alt="" />
+          <img class="service-logo" src="./images/development-icon.png" alt="" />
           <span class="service-card-title">Development</span>
           <span class="service-card-content"
             >Create a platform with the best and coolest quality from us.</span
           >
         </div>
         <div class="service-card">
-          <img class="service-logo" src="./src/ui-icon.png" alt="" />
+          <img class="service-logo" src="./images/ui-icon.png" alt="" />
           <span class="service-card-title">UI/UX Designer</span>
           <span class="service-card-content"
             >We provide UI/UX Design services, and of course with the best
@@ -117,21 +119,21 @@
           >
         </div>
         <div class="service-card">
-          <img class="service-logo" src="./src/graphik-icon.png" alt="" />
+          <img class="service-logo" src="./images/graphik-icon.png" alt="" />
           <span class="service-card-title">Graphik Designer</span>
           <span class="service-card-content"
             >We provide Graphic Design services, with the best designers.</span
           >
         </div>
         <div class="service-card">
-          <img class="service-logo" src="./src/motion-icon.png" alt="" />
+          <img class="service-logo" src="./images/motion-icon.png" alt="" />
           <span class="service-card-title">Motion Graphik</span>
           <span class="service-card-content"
             >Create a platform with the best and coolest quality from us.</span
           >
         </div>
         <div class="service-card">
-          <img class="service-logo" src="./src/photo-icon.png" alt="" />
+          <img class="service-logo" src="./images/photo-icon.png" alt="" />
           <span class="service-card-title">Photography</span>
           <span class="service-card-content"
             >We provide Photography services, and of course with the best
@@ -139,7 +141,7 @@
           >
         </div>
         <div class="service-card">
-          <img class="service-logo" src="./src/video-icon.png" alt="" />
+          <img class="service-logo" src="./images/video-icon.png" alt="" />
           <span class="service-card-title">Videography</span>
           <span class="service-card-content"
             >Create a platform with the best and coolest quality from us..</span
@@ -153,74 +155,39 @@
         <span>Our Awesome Portofolio</span>
         <img
           class="slider-double-circle-img"
-          src="./src/circle-icon.png"
+          src="./images/circle-icon.png"
           alt=""
         />
       </div>
       <div
         class="slider-items"
-        onmousemove="mouseMove(event)"
-        onmousedown="mouseDown(event)"
-        onmouseup="mouseUp()"
-        onmouseleave="mouseLeave()"
       >
         <div class="slider-item">
           <div class="slide-content">
-            <img src="./src/slider-item-1.png" alt="" />
+            <img src="./images/slider-item-1.png" alt="" />
           </div>
           <div class="slide-content">
-            <img src="./src/slider-item-2.png" alt="" />
+            <img src="./images/slider-item-2.png" alt="" />
           </div>
           <div class="slide-content">
-            <img src="./src/slider-item-3.png" alt="" />
-          </div>
-        </div>
-        <div class="slider-item">
-          <div class="slide-content">
-            <img src="./src/slider-item-1.png" alt="" />
-          </div>
-          <div class="slide-content">
-            <img src="./src/slider-item-2.png" alt="" />
-          </div>
-          <div class="slide-content">
-            <img src="./src/slider-item-3.png" alt="" />
-          </div>
-        </div>
-        <div class="slider-item">
-          <div class="slide-content">
-            <img src="./src/slider-item-1.png" alt="" />
-          </div>
-          <div class="slide-content">
-            <img src="./src/slider-item-2.png" alt="" />
-          </div>
-          <div class="slide-content">
-            <img src="./src/slider-item-3.png" alt="" />
+            <img src="./images/slider-item-3.png" alt="" />
           </div>
         </div>
       </div>
       <div class="slider-button-container">
-        <div class="slider-button-box">
-          <div class="slider-active-button"></div>
-          <div class="slider-button"></div>
-          <div class="slider-button"></div>
-        </div>
       </div>
-      <div class="slider-responsive-button-box">
-        <img src="./src/slider-responsive-button-left.png" alt="" />
-        <img src="./src/slider-responsive-button-right.png" alt="" />
-      </div>
-      <img class="slider-vector-1-img" src="./src/vector-1.png" alt="" />
+      <img class="slider-vector-1-img" src="./images/vector-1.png" alt="" />
     </div>
     <div class="contact-us-container">
-      <img class="contact-us-plus-img" src="./src/plus-icon.png" alt="" />
+      <img class="contact-us-plus-img" src="./images/plus-icon.png" alt="" />
       <span class="contact-us-title"
         >Contact us for the service you want to use</span
       >
       <button class="contact-us-btn">Contact us</button>
-      <img class="contact-us-circle-img" src="./src/circle-icon.png" alt="" />
+      <img class="contact-us-circle-img" src="./images/circle-icon.png" alt="" />
     </div>
     <div class="footer">
-      <img src="./src/logo.png" alt="" />
+      <img src="./images/logo.png" alt="" />
       <ul class="footer-list">
         <li><a href="#">Support</a></li>
         <li><a href="#">Privacy Policy</a></li>

@@ -215,7 +215,7 @@ nav {
 
 .main {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   align-items: center;
   justify-items: center;
   padding-left: 120px;
@@ -330,6 +330,7 @@ nav {
 
 .content-1 {
   padding: 0 120px;
+  overflow-x: clip;
 }
 
 .content-1-box {
@@ -828,6 +829,21 @@ nav {
   .content-1 {
     padding: 0 24px;
   }
+  .main-linear-gradient {
+    display: none;
+    grid-row: 1/2;
+    width: 252.37px;
+    height: 666.74px;
+  }
+  .main-linear-gradient-2 {
+    display: none;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 215.17px;
+    height: 644.72px;
+    top: 0px;
+    transform: rotate(44.85deg);
+  }
   .services-linear-gradient {
     display: none;
   }
@@ -869,19 +885,6 @@ nav {
 }
 
 @media screen and (max-width: 800px) {
-  .main-linear-gradient {
-    grid-row: 1/2;
-    width: 252.37px;
-    height: 666.74px;
-  }
-  .main-linear-gradient-2 {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    width: 215.17px;
-    height: 644.72px;
-    top: 0px;
-    transform: rotate(44.85deg);
-  }
   .main-image {
     width: 100%;
   }
