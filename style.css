@@ -8,9 +8,18 @@ body {
   background: #19191b;
 }
 
+.scroll-block{
+  overflow: hidden;
+}
+
 @font-face {
   font-family: Graphik;
   src: url(Graphik-Regular.woff);
+}
+
+.container{
+  width: 100%;
+  overflow-x: hidden;
 }
 
 nav {
@@ -127,9 +136,6 @@ nav {
   outline: none;
   cursor: pointer;
   z-index: 3;
-  position: fixed;
-  top: 40px;
-  right: 20px;
 }
 .rectangle {
   position: absolute;
@@ -179,6 +185,37 @@ nav {
 .box ul li a {
   font-size: 26px;
 }
+.box ul li a:active {
+  position: relative;
+}
+.box li a:before, .box li a:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -2px;
+}
+
+.box li a:before {
+  left: 0;
+}
+.box li a:after {
+  right: 0;
+  background: rgba(255, 255, 255, 0.7);
+  transition: width 0.8s;
+}
+
+.box li a:hover:before {
+  background: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.box li a:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
 .box{
 	background-color: #19191b;
   backdrop-filter: blur(8px);
@@ -221,7 +258,7 @@ nav {
   padding-left: 120px;
   margin-top: 23px;
   position: relative;
-  overflow-x: clip;
+  /* overflow-x: clip; */
 }
 
 .main-linear-gradient {
@@ -237,6 +274,7 @@ nav {
   filter: blur(300px);
   border-radius: 154.972px;
   transform: rotate(-54.37deg);
+  z-index: -1;
 }
 
 .main-linear-gradient-2 {
@@ -253,6 +291,7 @@ nav {
   filter: blur(300px);
   border-radius: 154.972px;
   transform: rotate(65.71deg);
+  z-index: -1;
 }
 
 .main-card {
@@ -319,7 +358,7 @@ nav {
 
 .main-image {
   width: 50%;
-  min-width: 382px;
+  min-width: 300px;
   position: relative;
 }
 
@@ -330,7 +369,7 @@ nav {
 
 .content-1 {
   padding: 0 120px;
-  overflow-x: clip;
+  /* overflow-x: clip; */
 }
 
 .content-1-box {
@@ -385,7 +424,7 @@ nav {
   padding: 0 120px;
   margin-top: 150px;
   position: relative;
-  overflow-x: clip;
+  /* overflow-x: clip; */
 }
 
 .services-linear-gradient {
@@ -485,7 +524,7 @@ nav {
 .slider-container {
   position: relative;
   padding: 120px;
-  overflow-x: clip;
+  /* overflow-x: clip; */
 
 }
 
@@ -830,13 +869,11 @@ nav {
     padding: 0 24px;
   }
   .main-linear-gradient {
-    display: none;
     grid-row: 1/2;
     width: 252.37px;
     height: 666.74px;
   }
   .main-linear-gradient-2 {
-    display: none;
     grid-column: 1/2;
     grid-row: 2/3;
     width: 215.17px;
@@ -910,6 +947,7 @@ nav {
   }
   .footer {
     flex-direction: column;
+    padding-bottom: 40px;
   }
   .slider-container {
     padding: 120px 0px;
