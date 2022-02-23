@@ -1,5 +1,5 @@
 const playIcon = document.getElementsByClassName("video-player-icon");
-const player = document.getElementsByClassName("video-box");
+const player = document.getElementsByClassName("video-box-img");
 const playIconWidth = playIcon[0].clientWidth;
 const playIconHeight = playIcon[0].clientHeight;
 const body = document.body;
